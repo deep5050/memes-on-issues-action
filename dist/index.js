@@ -42,7 +42,7 @@ async function getRandomMeme() {
         var img_data = data[random];
         var image_url = "https://raw.githubusercontent.com/deep5050/programming-memes/main/" + img_data['path'];
         console.log(image_url);
-        var html = `\n<div align=center><img alt=meme src=${image_url} width=500px align=center></div>`;
+        var html = `\n<div><img alt=meme src=${image_url} width=500px ></div>\n`;
         return html;
     } catch (err) {
         core.setFailed(`Error:${err.message}`);
