@@ -1,6 +1,31 @@
 ![memes-on-issues-action](https://socialify.git.ci/deep5050/memes-on-issues-action/image?description=1&descriptionEditable=Greet%20the%20issue%20raiser%20with%20a%20customizable%20message%20and%20a%20bonus%20programming%20meme%20&font=KoHo&forks=1&issues=1&language=1&owner=1&pattern=Brick%20Wall&pulls=1&stargazers=1&theme=Light)
 
 
+## [see demo](https://github.com/deep5050/memes-on-issues-action/issues/1#issuecomment-728134188)
+
+## How to use
+
+Create a file under `.github/workflows/meme.yml` with the following content
+
+```yaml
+name: "Greet With A Random Meme"
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  test:
+    name: setup environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: mast joke mara
+        uses: deep5050/memes-on-issues-action@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+```
 
 <!-- ROADMAP -->
 ## Roadmap
