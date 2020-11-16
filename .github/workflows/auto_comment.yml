@@ -1,4 +1,4 @@
-name: "Greet With A Random Joke"
+name: "Greet With A Random Meme"
 on:
   issues:
     types: [opened, reopened]
@@ -11,6 +11,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: mast joke mara
-        uses: deep5050/MastJokeMara@main
+        uses: deep5050/memes-on-issues-action@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
