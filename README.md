@@ -20,12 +20,41 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: mast joke mara
+      - name: memes on isssues
         uses: deep5050/memes-on-issues-action@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 ```
+### Custom configuration
+
+```yaml
+name: "Greet With A Random Meme"
+on:
+  issues:
+    types: [opened, reopened]
+
+
+jobs:
+  test:
+    name: setup environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: memes on isssues
+        uses: deep5050/memes-on-issues-action@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issue_msg: |
+            (ISSUE) Hi, {{author}} here is a joke for you 
+            {{meme}}
+
+```
+
+## Related action
+
+Checkout [jokes on issues ](https://github.com/deep5050/MastJokeMara)
 
 <!-- ROADMAP -->
 ## Roadmap
