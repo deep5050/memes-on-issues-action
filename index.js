@@ -95,7 +95,7 @@ async function run(meme) {
         console.log(`got this meme: ${meme}`)
         console.log("commenting...")
         var messageBody = message.replace('{{author}}', '@' + author).replace('{{meme}}', meme);
-        messageBody = messageBody + "\n\nUse this [action](https://github.com/deep5050/memes-on-issues-action) on your projects.";
+        messageBody = messageBody + "\n\nUse [this action](https://github.com/deep5050/memes-on-issues-action) on your projects. Use [jokes on issues](https://github.com/deep5050/MastJokeMara) instead." ;
 
         const comment = await octokit.issues.createComment({
             issue_number: issueNumber,
