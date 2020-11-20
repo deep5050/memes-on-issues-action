@@ -4,7 +4,7 @@
 ## [See demo](https://github.com/deep5050/memes-on-issues-action/issues/1#issuecomment-728134188)
 ![demo](https://user-images.githubusercontent.com/27947066/99762392-6812ae00-2b1e-11eb-9e7f-e2040ed0a843.png)
 
-
+## [subscribe to service updates](https://github.com/deep5050/memes-on-issues-action/issues/2)
 ## How to use
 
 Create a file `.github/workflows/meme.yml` with the following content
