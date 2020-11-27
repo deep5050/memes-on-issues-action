@@ -11,7 +11,9 @@ inputs:
     description: 'your Customized Issue message , {{author}} and {{meme}} two dynamic variables must be included'
     required: false
 
-
+  PR_msg:
+    description: 'your Customized Pull request message , {{author}} and {{meme}} two dynamic variables must be included'
+    required: false
 
 outputs:
   comment-url:
