@@ -48,9 +48,8 @@ jobs:
         uses: deep5050/memes-on-issues-action@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issue_msg: |
-            (ISSUE) Hi, {{author}} here is a joke for you 
-            {{meme}}
+          issue_msg: 'Hi {{author}} enjoy this {{meme}}' # change accordingly
+          PR_msg: 'Hi {{author}} enjoy this {{meme}}' # change accordingly
 
 ```
 
