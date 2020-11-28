@@ -20,8 +20,6 @@ jobs:
     name: setup environment
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
       - name: memes on isssues
         uses: deep5050/memes-on-issues-action@main
         with:
@@ -42,8 +40,6 @@ jobs:
     name: setup environment
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
       - name: memes on isssues
         uses: deep5050/memes-on-issues-action@main
         with:
@@ -72,8 +68,6 @@ jobs:
     name: setup environment
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
       - name: memes on isssues
         uses: deep5050/memes-on-issues-action@main
         with:
