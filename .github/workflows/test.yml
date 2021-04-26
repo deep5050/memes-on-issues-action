@@ -1,4 +1,5 @@
 
+
 name: "Greet With A Random Meme"
 on:
   issues:
@@ -9,8 +10,8 @@ jobs:
     name: setup environment
     runs-on: ubuntu-latest
     steps:
-      - name: memes on issues
-        uses: ./
+      - name: memes on isssues
+        uses: deep5050/memes-on-issues-action@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           allow_owner: true
