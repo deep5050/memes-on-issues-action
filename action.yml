@@ -1,26 +1,29 @@
-
-name: 'memes on issues action'
-description: 'Greet with random meme on new Issue'
-author: 'deep5050'
+name: "memes on issues action"
+description: "Greet with random meme on new Issue"
+author: "deep5050"
 inputs:
   GITHUB_TOKEN:
-    description: 'Github Token for authentication'
+    description: "Github Token for authentication"
     required: true
 
   issue_msg:
-    description: 'your Customized Issue message , {{author}} and {{meme}} two dynamic variables must be included'
+    description: "your Customized Issue message , {{author}} and {{meme}} two dynamic variables must be included"
     required: false
 
   PR_msg:
-    description: 'your Customized Pull request message , {{author}} and {{meme}} two dynamic variables must be included'
+    description: "your Customized Pull request message , {{author}} and {{meme}} two dynamic variables must be included"
+    required: false
+
+  allow_owner:
+    description: "allow owners to get memes too"
     required: false
 
 outputs:
   comment-url:
-    description: 'The comment URL'
+    description: "The comment URL"
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
 branding:
   color: "red"
-  icon: "heart" 
+  icon: "heart"
