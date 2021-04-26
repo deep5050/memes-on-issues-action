@@ -46,6 +46,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issue_msg: 'Hi {{author}} enjoy this {{meme}}' # change accordingly
           PR_msg: 'Hi {{author}} enjoy this {{meme}}' # change accordingly
+          allow_owner: true # get meme on your own issue :)
 
 ```
 
@@ -89,6 +90,7 @@ See the [open issues](https://github.com/deep5050/memes-on-issues-action/issues)
 ## Version History
 
 `v1.0.0` Initial release
+`v1.1.0` Allow owners to get meme too !
 
 
 <!-- CONTRIBUTING -->
