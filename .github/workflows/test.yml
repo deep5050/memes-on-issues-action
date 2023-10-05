@@ -10,7 +10,7 @@ jobs:
     name: setup environment
     runs-on: ubuntu-latest
     steps:
-      - name: jokes on isssues
+      - name: jokes on issues
         uses: ivan-developer-01/jokes-on-issues-action@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
