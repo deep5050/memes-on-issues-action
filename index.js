@@ -22,7 +22,7 @@ if (!allow_owner || allow_owner == "false") {
 }
 
 async function getRandomJoke() {
-  const url = "https://github-readme-jokes.vercel.app/api";
+  const url = "https://readme-jokes.vercel.app/api";
   try {
     core.info(url);
     var html = `\n<div><img alt=joke src=${url} width=500px ></div>\n`;
