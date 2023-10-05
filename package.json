@@ -1,7 +1,7 @@
 {
-  "name": "memes-on-issues-action",
+  "name": "jokes-on-issues-action",
   "version": "1.1.0",
-  "description": "Greet issue raiser with a custom message and a random meme",
+  "description": "Greet issue raiser with a custom message and a random joke",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deep5050/memes-on-issues-action.git"
+    "url": "git+https://github.com/ivan-developer-01/jokes-on-issues-action.git"
   },
   "keywords": [
-    "meme",
+    "joke",
     "github-action",
     "issue",
-    "random-meme"
+    "random-joke"
   ],
-  "author": "Dipankar Pal",
+  "author": "Ivan Kolosov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deep5050/memes-on-issues-action/issues"
+    "url": "https://github.com/ivan-developer-01/jokes-on-issues-action/issues"
   },
-  "homepage": "https://github.com/deep5050/memes-on-issues-action#readme",
+  "homepage": "https://github.com/ivan-developer-01/jokes-on-issues-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
